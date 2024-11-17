@@ -34,3 +34,12 @@ int main(){
     cin>>puntoX;
     cout<<"Introduce las coordenadas del punto de referencia y: ";
     cin>>puntoY;
+
+ if (!dentroDelCuadrante(puntoX, puntoY, xmin, xmax, ymin, ymax)){
+        cout<<"El punto de referencia no esta dentro de los limites del cuadrante."<<endl;
+        return 0;
+    }
+
+cout<<"Distancias desde el punto ("<<puntoX<<", "<<puntoY<<") a otros puntos dentro del cuadrante:"<<endl;
+
+}
