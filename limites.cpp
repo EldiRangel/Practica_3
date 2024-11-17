@@ -28,3 +28,9 @@ int main(){
     cin>>ymin;
     cout<<"Introduce los limites del cuadrante (y_maximo): ";
     cin>>ymax;
+
+    double puntoX, puntoY;
+    cout<<"Introduce las coordenadas del punto de referencia x: ";
+    cin>>puntoX;
+    cout<<"Introduce las coordenadas del punto de referencia y: ";
+    cin>>puntoY;
