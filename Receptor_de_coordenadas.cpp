@@ -33,3 +33,27 @@ for (int i=2; i<3;++i){
     }
     return true;
 }
+
+int main(){
+    const int num_puntos=3;
+    double puntos[num_puntos][2];
+
+    for (int i=0; i<num_puntos; ++i) {
+        cout<<"Introduce la coordenada x  "<<i+1<<": ";
+        cin >> puntos[i][0];
+        cout<<"Introduce la coordenada y  "<<i+1<<": ";
+        cin >> puntos[i][1];
+        Cuadrante(puntos[i][0], puntos[i][1]);
+    }
+
+    double A, B, C;
+    if (enLaMismaLinea(puntos, A, B, C)){
+        cout<<"Todos los puntos estan en la misma linea."<<endl;
+        cout<<"La ecuacion de la linea es: "<<A<<"x + "<<B<<"y + "<<C<<" = 0" << endl;
+    } else {
+        cout<<"Los puntos no estan en la misma linea."<<endl;
+    }
+
+    return 0;
+}
+
