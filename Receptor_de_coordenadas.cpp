@@ -17,7 +17,9 @@ if (x>0&&y>0){
     } else if (y==0){
      cout<<"El punto ("<<x<<", "<<y<<") ubicado en el eje X."<<endl;
     }
+}
 
+bool enLaMismaLinea(double puntos[3][2], double &A, double &B, double &C){
 
 
 
