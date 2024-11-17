@@ -41,5 +41,11 @@ int main(){
     }
 
 cout<<"Distancias desde el punto ("<<puntoX<<", "<<puntoY<<") a otros puntos dentro del cuadrante:"<<endl;
-
+ for (int i=0; i<num_puntos; ++i){
+        if (dentroDelCuadrante(puntos[i][0], puntos[i][1], xmin, xmax, ymin, ymax)){
+            double distancia=Distancia(puntoX, puntoY, puntos[i][0], puntos[i][1]);
+            cout<<"Distancia a ("<<puntos[i][0]<<", "<<puntos[i][1]<<") es "<<distancia<<endl;
+        }
+    }
+       return 0;
 }
