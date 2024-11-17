@@ -20,8 +20,16 @@ if (x>0&&y>0){
 }
 
 bool enLaMismaLinea(double puntos[3][2], double &A, double &B, double &C){
+    double x1=puntos[0][0], y1=puntos[0][1];
+    double x2=puntos[1][0], y2=puntos[1][1];
 
+    A=y2-y1;
+    B=x1-x2;
+    C=x2*y1-x1*y2;
 
-
-
+for (int i=2; i<3;++i){
+        double x=puntos[i][0], y=puntos[i][1];
+        if (A*x+B*y+C!= 0) return false;
+    }
+    return true;
 }
